@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+.landing-main {
+    position: relative;
+    background-color: rgb(255, 240, 253);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mac-wrapper {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+}
+
+.mac-imgs {
+    width: 200px;
+    height: 150px;
+    display: block;
+    object-fit: contain;
+    position: absolute;
+    opacity: .8;
+}
+
+.mac-1 {
+    left: 5%;
+    top: 10%;
+
+}
+
+.mac-2 {
+
+    right: 13%;
+}
+
+.mac-3 {
+
+    left: 15%;
+    top: 40%;
+}
+
+.mac-4 {
+
+    left: 30%;
+    bottom: 10%;
+
+}
+
+.mac-5 {
+
+    right: 25%;
+}
+
+.mac-6 {
+
+    right: 33%;
+}
+
+.mac-7 {
+
+    left: 25%;
+}
+
+.mac-8 {
+
+    right: 45%;
+}
+
+/* 
+.mac-9 {
+
+    left: 0;
+} */
+
+.mac-10 {
+
+    right: 0;
+}
+
+.pre-title:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: rgb(156, 156, 156);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.pre-title {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    color: rgb(98, 98, 98);
+}
+
+.pre-title:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: rgb(161, 161, 161);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 400;
+    line-height: 1;
+    color: rgb(27, 27, 27);
+    position: relative;
+    z-index: 3;
+}
+
+.title img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+    z-index: 0;
+}
+
+.btn-wrapper {
+    /* flex: 1; */
+}
+
+.landing-btn {
+    margin-top: 60px;
+    background-color: rgb(255, 29, 67);
+    color: #fff;
+    font-size: 1.4vw;
+    border: none;
+    display: block;
+    width: 12vw;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    transition: all 0.5s ease;
+    z-index: 10;
+    position: relative;
+
+}
+
+.landing-btn:hover {
+    background-color: rgb(255, 2, 2);
+}
+
+.arrow {
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 20px;
+    animation: action 2s linear infinite;
+    opacity: 0.6;
+}
+
+@-webkit-keyframes action {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes action {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

@@ -5,4 +5,4 @@
  <br>
  <hr>
 
-<tt>Landing page made with html, css and js and gsap library, design made by https://dribbble.com/Valovoy/shots</tt>	
+<tt>Landing page made with html, css and js and gsap library, design made by https://dribbble.com/marinapavlovic</tt>	

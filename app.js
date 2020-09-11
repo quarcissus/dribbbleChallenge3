@@ -1,11 +1,22 @@
-const macWrapper = document.querySelector(".mac-wrapper");
-console.log(macWrapper.children[0])
+const menuForms = document.querySelectorAll(".modalOpen");
+const modal = document.querySelector(".modal");
+const closeModal = document.querySelector(".closeModal");
 
-for (let i = 0; i < macWrapper.children.length; i++) {
-    let deg = Math.random() * 180
-    macWrapper.children[i].style.webkitTransform = 'rotate(' + deg + 'deg)';
-    macWrapper.children[i].style.mozTransform = 'rotate(' + deg + 'deg)';
-    macWrapper.children[i].style.msTransform = 'rotate(' + deg + 'deg)';
-    macWrapper.children[i].style.oTransform = 'rotate(' + deg + 'deg)';
-    macWrapper.children[i].style.transform = 'rotate(' + deg + 'deg)';
+
+closeModal.addEventListener("click", function () {
+    modal.style.opacity = 0;
+    modal.style.pointerEvents = "none";
+})
+
+for (let i = 0; i < menuForms.length; i++) {
+    menuForms[i].addEventListener("click", function () {
+        modal.style.opacity = 1;
+        modal.style.pointerEvents = "auto";
+
+        if (menuForms[i].dataset.target === "register") {
+            console.log("registro")
+        } else {
+            console.log("login")
+        }
+    })
 }

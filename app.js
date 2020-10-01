@@ -13,11 +13,13 @@ crossModal.addEventListener("click", function () {
   closeModal();
 });
 
+console.log(getComputedStyle(document.querySelector(".menu")));
 for (let i = 0; i < menuForms.length; i++) {
   menuForms[i].addEventListener("click", function () {
     openModal();
     let div = document.createElement("div");
     if (menuForms[i].dataset.target === "register") {
+      modalFormBox.style.height = "80vh"
       let divTitle = document.createElement("div");
       divTitle.appendChild(document.createTextNode("Register"));
       divTitle.classList.add("mf-title");
@@ -57,6 +59,7 @@ for (let i = 0; i < menuForms.length; i++) {
 
       modalForm.appendChild(div);
     } else {
+      modalFormBox.style.height = "60vh"
       let divTitle = document.createElement("div");
       divTitle.appendChild(document.createTextNode("Login"));
       divTitle.classList.add("mf-title");
@@ -85,10 +88,27 @@ for (let i = 0; i < menuForms.length; i++) {
       divCheckBox.appendChild(label);
 
       let forgotPass = document.createElement("div");
-      forgotPass.appendChild(document.createTextNode("forgot password"));
+      forgotPass.style.position = "relative";
+      // forgotPass.appendChild(document.createTextNode("forgot password"));
+      let forgotPasstext = document.createElement("div");
+
+      forgotPasstext.style.position = "relative"
+      forgotPasstext.style.zIndex = "1"
+      forgotPasstext.appendChild(document.createTextNode("forgot password"));
+      forgotPasstext.classList.add("forgotPassText");
+      let divbgcolor = document.createElement("div");
+      divbgcolor.classList.add("forgotpassWidthEffect");
+      divbgcolor.style.position = "absolute";
+      divbgcolor.style.backgroundColor = "rgb(255, 230, 0)";
+      divbgcolor.style.height = "100%";
+      divbgcolor.style.zIndex = "0";
+
       let arrowFP = document.createElement("div");
       arrowFP.classList.add("arrowFP");
+      forgotPass.appendChild(forgotPasstext);
+
       forgotPass.appendChild(arrowFP);
+      forgotPass.appendChild(divbgcolor);
       forgotPass.classList.add("forgot-pass");
 
       let divUserManage = document.createElement("div");

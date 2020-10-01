@@ -3,7 +3,20 @@ const modal = document.querySelector(".modal");
 const crossModal = document.querySelector(".closeModal");
 const modalFormBox = document.querySelector(".modal-box");
 const modalForm = document.querySelector(".modal-form");
+const closeRespModal = document.querySelector(".close-resp-menu");
+const menuResp = document.querySelector(".menu");
+const menuTrigger = document.querySelector(".menu-trigger-resp");
 
+
+menuTrigger.addEventListener("click", function (e) {
+  menuResp.style.translate = "-50vw";
+  console.log(getComputedStyle(menuResp).getPropertyValue('width'))
+});
+
+closeRespModal.addEventListener("click", function (e) {
+  menuResp.style.translate = "0";
+  console.log(getComputedStyle(menuResp).getPropertyValue('width'))
+});
 modal.addEventListener("click", function (e) {
   if (e.target.className !== "modal-box") {
     // closeModal();

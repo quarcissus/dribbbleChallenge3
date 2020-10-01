@@ -1,137 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/31de0ff71f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="buy-items">
-      <div class="buy-box related">
-        <img src="/img/contorno-de-forma-de-circulo.svg" alt="" />
-        <span>related</span>
-      </div>
-      <div class="buy-box buy">
-        <img src="/img/carrito-de-compras.svg" alt="" />
-        <span>buy now</span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/31de0ff71f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="buy-items">
+    <div class="buy-box related">
+      <img src="/img/contorno-de-forma-de-circulo.svg" alt="" />
+      <span>related</span>
     </div>
-    <section class="modal">
-      <div class="modal-box">
-        <div class="closeModal"><img src="./img/cerrar.png" alt="" /></div>
-        <div class="modal-form"></div>
+    <div class="buy-box buy">
+      <img src="/img/carrito-de-compras.svg" alt="" />
+      <span>buy now</span>
+    </div>
+  </div>
+  <section class="modal">
+    <div class="modal-box">
+      <div class="closeModal"><img src="./img/cerrar.png" alt="" /></div>
+      <div class="modal-form"></div>
+    </div>
+  </section>
+
+  <main class="landing-page">
+    <nav>
+      <div class="nav-item sm">
+        <ul class="sm">
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-pinterest-p"></i></li>
+          <li><i class="fas fa-rss"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+        </ul>
       </div>
-    </section>
-
-    <main class="landing-page">
-      <nav>
-        <div class="nav-item sm">
-          <ul class="sm">
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-pinterest-p"></i></li>
-            <li><i class="fas fa-rss"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-          </ul>
-        </div>
-        <div class="nav-item logo">easymeals</div>
-        <div class="nav-item menu">
-          <ul>
-            <li><a href=""> home </a></li>
-            <li class="new dropdown">
-              <a href=""> recipes</a><i class="fas fa-star"></i>
-              <div class="dropdown-wrapper recipes">
-                <a href="">
-                  <div><img src="./img/cocinero.png" alt="" /></div>
-                  Best recipes
-                </a>
-                <a href="">Tenders and crips chicken legs with tomatoes</a>
-                <a href="">Spaghetti bolognese with mushs </a>
-                <a href="">Creamy Mediterranean chicken pasta</a>
-                <a href="">Garlic butter mushroom pasta</a>
-                <a href="">Steak salad with goat cheeese</a>
-                <a href="">Falafels and fried eggs with salad</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href=""> forum</a>
-              <div class="dropdown-wrapper forum">
-                <a href="">All forum</a>
-                <a href="">Forum</a>
-                <a href="">Topic</a>
-                <a href="">User</a>
-              </div>
-            </li>
-            <li class="name"><a href=""> easymeals</a></li>
-            <li class="dropdown">
-              <a href=""> shop</a>
-              <div class="dropdown-wrapper forum">
-                <a href="">Product Single</a>
-                <a href="">Product List</a>
-                <a href="">Account</a>
-                <a href="">Cart</a>
-              </div>
-            </li>
-            <li><a href=""> about</a></li>
-            <li><a href=""> contact</a></li>
-          </ul>
-        </div>
-        <div class="nav-item log">
-          <ul class="">
-            <li class="modalOpen" data-target="register">
-              <i class="far fa-smile-beam"></i>
-              <span>register</span>
-            </li>
-            <li class="modalOpen" data-target="login">
-              <i class="far fa-user"></i>
-              <span>login</span>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <section class="landing-hero">
-        <div class="landing-text">
-          <h1>
-            Delicious & Organic <br />
-            is the way to go
-          </h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            facere cupiditate quasi nemo, est in voluptatem vero eaque eveniet
-            quia esse sit, reprehenderit perferendis minus tempora sed error
-            exercitationem id.
-          </p>
-          <div class="testimonial">
-            <img src="/img/personas-emocionales-social.jpg" alt="" />
-            <div class="test-info">
-              <div>Erica James</div>
-              <div>Sept 28, 2020</div>
+      <div class="nav-item logo">easymeals</div>
+      <div class="nav-item menu">
+        <div class="close-resp-menu"><img src="./img/cerrar.svg" alt=""></div>
+        <ul>
+          <li class="dropdown">
+            <a href=""> home <span class="menu-ricon homeright"><img src="./img/chevron-derecho.svg" alt=""></span></a>
+          </li>
+          <li class="new dropdown">
+            <a href=""> recipes <span class="menu-ricon"><img src="./img/chevron-derecho.svg" alt=""></span></a><i
+              class="fas fa-star"></i>
+            <div class="dropdown-wrapper recipes">
+              <a href="">
+                <div><img src="./img/cocinero.png" alt="" /></div>
+                Best recipes
+              </a>
+              <a href="">Tenders and crips chicken legs with tomatoes</a>
+              <a href="">Spaghetti bolognese with mushs </a>
+              <a href="">Creamy Mediterranean chicken pasta</a>
+              <a href="">Garlic butter mushroom pasta</a>
+              <a href="">Steak salad with goat cheeese</a>
+              <a href="">Falafels and fried eggs with salad</a>
             </div>
+            <div class="dropdown-resp">
+              <a href="">Main Home</a>
+              <a href="">Personal blogs</a>
+              <a href="">Food Blog Home</a>
+              <a href="">Cake Recipes</a>
+
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href=""> forum <span class="menu-ricon homeright"><img src="./img/chevron-derecho.svg" alt=""></span></a>
+            <div class="dropdown-wrapper forum">
+              <a href="">All forum</a>
+              <a href="">Forum</a>
+              <a href="">Topic</a>
+              <a href="">User</a>
+            </div>
+            <div class="dropdown-resp">
+              <a href="">Main Home</a>
+              <a href="">Personal blogs</a>
+              <a href="">Food Blog Home</a>
+              <a href="">Cake Recipes</a>
+
+            </div>
+          </li>
+          <li class="name"><a href=""> easymeals</a></li>
+          <li class="dropdown">
+            <a href=""> shop <span class="menu-ricon"><img src="./img/chevron-derecho.svg" alt=""></span></a>
+            <div class="dropdown-wrapper forum">
+              <a href="">Product Single</a>
+              <a href="">Product List</a>
+              <a href="">Account</a>
+              <a href="">Cart</a>
+            </div>
+            <div class="dropdown-resp">
+              <a href="">Main Home</a>
+              <a href="">Personal blogs</a>
+              <a href="">Food Blog Home</a>
+              <a href="">Cake Recipes</a>
+
+            </div>
+          </li>
+          <li><a href=""> about</a></li>
+          <li><a href=""> contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-item log">
+        <ul class="">
+          <li class="modalOpen" data-target="register">
+            <i class="far fa-smile-beam"></i>
+            <span>register</span>
+          </li>
+          <li class="modalOpen" data-target="login">
+            <i class="far fa-user"></i>
+            <span>login</span>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-trigger-resp">O</div>
+    </nav>
+
+    <section class="landing-hero">
+      <div class="landing-text">
+        <h1>
+          Delicious & Organic <br />
+          is the way to go
+        </h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+          facere cupiditate quasi nemo, est in voluptatem vero eaque eveniet
+          quia esse sit, reprehenderit perferendis minus tempora sed error
+          exercitationem id.
+        </p>
+        <div class="testimonial">
+          <img src="/img/personas-emocionales-social.jpg" alt="" />
+          <div class="test-info">
+            <div>Erica James</div>
+            <div>Sept 28, 2020</div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <br /><br /><br /><br /><b
-      >rb rb rb <br />rbbr
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </b>
-    <script src="app.js"></script>
-  </body>
+  <br /><br /><br /><br /><b>rb rb rb <br />rbbr
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </b>
+  <script src="app.js"></script>
+</body>
+
 </html>

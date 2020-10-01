@@ -171,7 +171,9 @@ nav {
   position: relative;
   display: inline-block;
 }
-
+.dropdown-resp {
+  display: none;
+}
 .dropdown-wrapper {
   position: absolute;
   top: 30px;
@@ -230,6 +232,10 @@ nav {
   opacity: 0.9;
 }
 .logo {
+  display: none;
+}
+
+.menu-ricon img {
   display: none;
 }
 ul li a {
@@ -306,6 +312,11 @@ ul li a:hover {
 .log ul li {
   cursor: pointer;
   transition: all 0.5s ease;
+}
+
+.menu-trigger-resp,
+.close-resp-menu {
+  display: none;
 }
 
 .log ul li:hover {
@@ -386,6 +397,7 @@ ul li a:hover {
   position: fixed;
   top: 40vh;
   right: 0;
+  z-index: 100;
 }
 
 .buy-box {
@@ -457,23 +469,85 @@ ul li a:hover {
     align-items: center;
     top: 0%;
     right: 0;
+    box-shadow: 0px 0px 15px rgb(246, 246, 246);
+    transition: all 0.5s ease;
+    transform: translateX(50vw);
+  }
+  .close-resp-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    display: block;
+  }
+  .close-resp-menu img {
+    height: 100%;
+    width: 100%;
+  }
+
+  ul li a {
+    color: rgb(29, 29, 29);
+  }
+  ul li a:hover {
+    color: black;
   }
   .menu ul {
+    margin-left: 50px;
     flex-direction: column;
     text-align: left;
     display: flex;
+    align-items: baseline;
     height: 50%;
   }
 
   .menu ul li {
     flex: 1;
-    font-size: calc(1em + 0.3vw);
+    font-size: 0.9em;
     text-align: left;
     color: white !important;
-    font-weight: 500;
+    font-weight: 600;
+  }
+  .menu-ricon img {
+    display: block;
+    height: 20px;
+    width: 15px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+  }
+
+  .homeright img {
+    height: 20px !important;
+    width: 15px !important;
+  }
+  .dropdown-wrapper {
+    display: none;
   }
   .dropdown:hover .dropdown-wrapper {
     height: 0;
+  }
+
+  .dropdown-resp {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    transition: all 0.3s ease;
+  }
+  .dropdown:hover .dropdown-resp {
+    height: 130px;
+    width: 130px;
+  }
+  .dropdown-resp a {
+    color: rgb(82, 82, 82);
+    font-size: 0.8em;
+    margin: 9px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
   .modalOpen span {
     display: none;
@@ -482,6 +556,12 @@ ul li a:hover {
 
   .log {
     font-size: 1em;
+  }
+
+  .menu-trigger-resp {
+    float: 1;
+    display: block;
+    text-align: center;
   }
   .landing-page {
     height: 100vh;

@@ -513,6 +513,11 @@ ul li a:hover {
 
 
 /* !! 4 images food grid */
+
+.fourGrid-wrapper {
+  margin-top: 30px;
+}
+
 .fg-row {
   display: flex;
   flex-direction: row;
@@ -546,9 +551,18 @@ ul li a:hover {
   margin-right: 8px;
 }
 
+.fr-head {
+  overflow: hidden;
+}
+
 .fr-head img {
   width: 100%;
   height: 100%;
+  transition: all 0.5s ease;
+}
+
+.fr-head:hover img {
+  transform: scale(1.08);
 }
 
 .fr-info {
@@ -569,7 +583,13 @@ ul li a:hover {
   font-size: calc(0.7em + 1.4vw);
 }
 
-/* !!MEDIAS QUERYS */
+/* *********************************************!!MEDIAS QUERYS ************************************+*/
+
+@media screen and (max-width: 1200px) {
+  .cta-wrapper {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1040px) {
 
@@ -760,10 +780,57 @@ ul li a:hover {
     height: 85vh;
     position: relative;
   }
+
+  /* !!cta */
+
+  .cta-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+
+  }
+
+  .cta-title {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: calc(1em + 2vw);
+  }
+
+  .cta-btn {
+    width: 30%;
+  }
+
+  /* !!4row cards */
+
+  .foodRow-card {
+    width: 40vw;
+    min-width: 380px;
+    margin: 40px 1vw;
+  }
+
 }
 
-@media (max-width: 799px) {
-  /* All screens LESS THAN 800px (0-799px) */
+@media (max-width: 792px) {
+
+  /* All screens LESS THAN 800px (0-770px) */
+  .foodRow-card {
+    width: 40vw;
+    min-width: 290px;
+    margin: 40px 1.6vw;
+  }
+}
+
+@media (max-width: 620px) {
+
+  /* All screens LESS THAN 800px (0-770px) */
+  .foodRow-card {
+    width: 80vw;
+    margin: 40px 1.6vw;
+    min-width: 80vw;
+  }
 }
 
 @media (max-width: 599px) {
@@ -794,6 +861,33 @@ ul li a:hover {
     width: 80%;
     line-height: 2;
   }
+
+  /* !!cta */
+
+  .cta-wrapper {
+    height: 325px;
+    margin-top: 80px;
+  }
+
+  .cta-title {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: calc(1em + 2.5vw);
+  }
+
+  .cta-inputs {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .cta-inputs .mf-input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .cta-btn {
+    width: 80%;
+  }
 }
 
 @media (max-width: 470px) {
@@ -805,5 +899,11 @@ ul li a:hover {
     width: 100vw;
     height: 85vh;
     position: relative;
+  }
+
+  .foodRow-card {
+    width: 60vw;
+    margin: 40px 1.6vw;
+    min-width: 310px;
   }
 }

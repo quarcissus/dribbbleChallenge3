@@ -10,7 +10,7 @@ const menuTrigger = document.querySelector(".menu-trigger-resp");
 
 menuTrigger.addEventListener("click", function (e) {
   menuResp.style.translate = "-50vw";
-  console.log(getComputedStyle(menuResp).getPropertyValue('width'))
+
 });
 
 closeRespModal.addEventListener("click", function (e) {
@@ -26,7 +26,7 @@ crossModal.addEventListener("click", function () {
   closeModal();
 });
 
-console.log(getComputedStyle(document.querySelector(".menu")));
+
 for (let i = 0; i < menuForms.length; i++) {
   menuForms[i].addEventListener("click", function () {
     openModal();
